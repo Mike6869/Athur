@@ -55,7 +55,6 @@ body{
     display: flex;
     position: relative;
     flex-direction: column;
-    flex-grow: 1;
     min-height: 100vh;
     overflow: hidden
 }
@@ -178,6 +177,7 @@ img, object, embed {
 
 .cover .slider, .cover .slider-viewport {
     height: 100%;
+    background: #d0d0d0;
 }
 
 .cover .cover-wrapper {
@@ -456,10 +456,10 @@ h1, h2 {
     height: auto;
     padding: 15px 60px;
     transition: .5s;
-    border: 1px solid #fff;
     outline: none;
-    background: #fff;
-    color: #000;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
     font-size: 18px;
     letter-spacing: 0.15em;
     line-height: 1;
@@ -542,7 +542,23 @@ h1, h2 {
 }
 
 .cover-button:hover {
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
+    background: #fff;
+    color: #000;
+}
+
+.slider .lazy-image {
+    max-width: none;
+}
+.slider .lazy-image {
+    flex-shrink: 0;
+}
+.is-protected {
+    -webkit-touch-callout: none;
+}
+.lazy-image {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    line-height: 0;
 }
