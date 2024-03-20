@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family:SpectralSC;
+  font-weight:400;
+  backgrond-color:#131312;
+  color:#FFFFFF;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+@font-face {
+  font-display:swap;
+  font-family:SpectralSC;
+  font-style:normal;
+  font-weight:400;
+  src:url('../../public/fonts/SpectralSC-Medium.ttf') format("ttf")
+}
