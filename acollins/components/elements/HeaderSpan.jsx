@@ -1,10 +1,6 @@
-import React from 'react';
-
 const HeaderSpan = () => {
     return (
-        <div>
-            
-        </div>
+        <span class = "text-white">qwesq</span>
     );
 };
 

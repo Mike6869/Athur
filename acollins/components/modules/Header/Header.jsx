@@ -1,8 +1,15 @@
+import HeaderSpan from "@/components/elements/HeaderSpan";
+
 const Header = () => {
     return (
         <header>
             <div>
-                <span></span>
+                <HeaderSpan>Главная</HeaderSpan>
+                <HeaderSpan>Фото</HeaderSpan>
+                <HeaderSpan>Видео</HeaderSpan>
+                <HeaderSpan>3D</HeaderSpan>
+                <HeaderSpan>Цена</HeaderSpan>
+                <HeaderSpan>Обо мне</HeaderSpan>
             </div>
         </header>
     );
