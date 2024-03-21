@@ -16,17 +16,22 @@ def entry_return():
 CORS(app)
 
 
-@app.route('/img')
+@app.get('/img')
 def get_img():
     return send_file("1.jpg")
 
-@app.route('/slider')
+@app.get('/slider')
 def get_url_for_slider():
     return jsonify(os.listdir('slider'))
 
-@app.route('/get_img/<test>')
+@app.get('/get_img/<test>')
 def get_img_for_src(test):
     return send_file(f'slider/{test}')
+
+@app.get('/get_video/<test>')
+def get_video_for_src(test):
+    return send_file(f'video/{test}')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

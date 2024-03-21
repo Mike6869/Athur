@@ -1,5 +1,7 @@
 const HeaderSpan = () => {
-    return <span class="text-white">qwesq</span>;
+    return (
+        <span className = "text-white">qwesq</span>
+    );
 };
 
 export default HeaderSpan;
