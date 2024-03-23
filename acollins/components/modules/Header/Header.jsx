@@ -3,7 +3,7 @@ import HeaderSpan from "@/components/elements/HeaderSpan";
 const Header = () => {
     return (
         <header>
-            <div>
+            <div style={{display:"flex", gap:"30px"}}>
                 <HeaderSpan>Главная</HeaderSpan>
                 <HeaderSpan>Фото</HeaderSpan>
                 <HeaderSpan>Видео</HeaderSpan>
