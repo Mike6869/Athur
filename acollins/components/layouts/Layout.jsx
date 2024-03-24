@@ -1,7 +1,7 @@
 // 'use client'
 
 import Header from "../modules/Header/Header";
-import Slider from "../slider/Slider";
+import Slider from "../modules/Slider/Slider";
 
 
 const layout = ({children}) => {
