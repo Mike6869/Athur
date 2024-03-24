@@ -1,0 +1,5 @@
+{
+    "proxy": "http://127.0.0.1:5000/slider_src",
+    "url_get_img": "http://127.0.0.1:5000/get_img",
+    "url_src_slider": "http://127.0.0.1:5000/slider_src"
+}
