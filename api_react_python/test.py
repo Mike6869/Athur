@@ -7,9 +7,7 @@ CORS(app)
 IMG_TYPE = (".jpeg", ".jpg", ".png")
 VIDEO_TYPE = ("mp4")
 
-
 CORS(app)
-
 
 @app.get('/slider_src')
 def get_url_for_slider() -> 'json':
