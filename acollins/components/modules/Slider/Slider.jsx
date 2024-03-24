@@ -3,8 +3,9 @@ import axios from "axios";
 import config from "@/config.json";
 import {useEffect, useState} from "react";
 import ImgSlider from "../ImgSlider/ImgSlider";
-import style from "./Slider.module.css"
+import style from "./Slider.module.css";
 import Marquee from "react-fast-marquee"; //https://github.com/justin-chu/react-fast-marquee
+import TextSlider from "../TextSlider/TextSlider";
 
 const Slider = () => {
     const [sliderSrc, setSliderSrc] = useState(["/slider/1.jpg"]);
@@ -22,13 +23,19 @@ const Slider = () => {
     }, []);
 
     return (
-        <Marquee>
-            <div className={style.div_slider}>
+        <div>
+            <TextSlider text="ARTHUR"></TextSlider>
+            <TextSlider text="COLLINS"></TextSlider>
+            <TextSlider text="PHOTO"></TextSlider>
+
+            <Marquee speed={100} play={true} style={{filter: "brightness(65%)"}}>
                 {sliderSrc?.map((src) => {
-                    return <ImgSlider src={config.url_get_img + src} key={src}/>;
+                    return (
+                        <ImgSlider src={config.url_get_img + src} key={src} />
+                    );
                 })}
-            </div>
-        </Marquee>
+            </Marquee>
+        </div>
     );
 };
 
