@@ -1,4 +1,7 @@
 .img_slider{
-    height: 500px;
-    object-fit: cover;
+    height: calc(100vh - 80px);
+    /* background-color: rgba(200,100,0,5);
+    background-blend-mode: multiply; */
+    /* width: auto; */
+    /* object-fit: cover; */
 }

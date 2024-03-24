@@ -1,0 +1,20 @@
+.span_slider {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.span_slider_1 {
+    left: 10%;
+}
+
+.span_slider_2 {
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+.span_slider_3 {
+    right: 10%;
+}
