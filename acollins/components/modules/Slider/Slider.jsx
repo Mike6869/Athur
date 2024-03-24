@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import axios from "axios";
 import config from "@/config.json";
 import {useEffect, useState} from "react";
