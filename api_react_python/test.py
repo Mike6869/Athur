@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 IMG_TYPE = (".jpeg", ".jpg", ".png")
-
+VIDEO_TYPE = ("mp4")
 
 @app.route('/entry')
 def entry_return():
@@ -17,9 +17,9 @@ def entry_return():
 CORS(app)
 
 
-@app.get('/img')
-def get_img():
-    return send_file("1.jpg")
+# @app.get('/img')
+# def get_img():
+#     return send_file("1.jpg")
 
 
 @app.get('/slider_src')
@@ -27,9 +27,9 @@ def get_url_for_slider() -> 'json':
     return jsonify([f'/slider/{src}' for src in os.listdir('slider') if src.endswith(IMG_TYPE)])
 
 
-@app.get('/get_img/<path:src>')
+@app.get('/get/<path:src>')
 def get_img_for_src(src: str) -> 'Response':
-    if (os.path.exists(src) and src.endswith(IMG_TYPE)):
+    if (os.path.exists(src) and (src.endswith(IMG_TYPE) or src.endswith(VIDEO_TYPE))):
         return send_file(src)
     return "File not found", 404
 
