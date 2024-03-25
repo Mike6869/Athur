@@ -2,10 +2,10 @@
 import axios from "axios";
 import config from "@/config.json";
 import {useEffect, useState} from "react";
-import ImgSlider from "../ImgSlider/ImgSlider";
+import ImgSlider from "./ImgSlider/ImgSlider";
 import style from "./Slider.module.css";
 import Marquee from "react-fast-marquee"; //https://github.com/justin-chu/react-fast-marquee
-import TextSlider from "../TextSlider/TextSlider";
+import TextSlider from "./TextSlider/TextSlider";
 
 const Slider = () => {
     const [sliderSrc, setSliderSrc] = useState(["/slider/1.jpg"]);

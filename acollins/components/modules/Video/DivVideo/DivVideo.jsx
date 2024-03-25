@@ -13,7 +13,7 @@ const DivVideo = ({label_name, id, src, src_poster}) => {
                 controls="controls"
                 muted
                 loop
-                autoPlay
+                // autoPlay
                 poster={src_poster}
             />
         </div>

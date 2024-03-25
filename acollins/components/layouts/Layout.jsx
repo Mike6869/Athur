@@ -1,5 +1,6 @@
 // 'use client'
 
+import Galery from "../modules/Galery/Galery";
 import Header from "../modules/Header/Header";
 import Photo from "../modules/Photo/Photo";
 import Slider from "../modules/Slider/Slider";
@@ -13,6 +14,7 @@ const layout = ({children}) => {
             <Slider></Slider>
             <Photo></Photo>
             <Video></Video>
+            <Galery></Galery>
         </>
     );
 };
