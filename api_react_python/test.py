@@ -13,6 +13,19 @@ CORS(app)
 def get_url_for_slider() -> 'json':
     return jsonify([f'/slider/{src}' for src in os.listdir('slider') if src.endswith(IMG_TYPE)])
 
+@app.get('/galery_preview_src')
+def get_url_for_galery_preview() -> 'json':
+    photo_sessions = []
+    for photo_session in os.listdir('page_galery'):
+        dict_photo_session = {}
+        for name_file in ['main', 'left', 'right']:
+            for type in IMG_TYPE:
+                photo_src = f'page_galery/{photo_session}/{name_file}{type}'
+                if(os.path.isfile(photo_src)): 
+                    dict_photo_session[name_file] = '/' + photo_src
+        dict_photo_session['name'] = ' '.join(photo_session.split('_'))
+        photo_sessions.append(dict_photo_session)
+    return jsonify(photo_sessions)
 
 @app.get('/get/<path:src>')
 def get_img_for_src(src: str) -> 'Response':
