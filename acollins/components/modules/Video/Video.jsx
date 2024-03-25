@@ -1,4 +1,4 @@
-import DivVideo from "../DivVideo/DivVideo";
+import DivVideo from "./DivVideo/DivVideo";
 import config from "@/config.json";
 import style from "./Video.module.css";
 

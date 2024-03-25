@@ -1,4 +1,4 @@
-import ImgPhoto from "../ImgPhoto/ImgPhoto";
+import ImgPhoto from "./ImgPhoto/ImgPhoto";
 import style from "./Photo.module.css"
 
 const Photo = () => {
