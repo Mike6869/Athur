@@ -1,0 +1,21 @@
+.hover_element{
+}
+
+.hover_element:hover > .img_video{
+    filter: blur(10px) brightness(0.5)
+}
+
+.hover_element:hover > .text{
+    opacity: 1;
+}
+
+.text{
+    transition: 0.5s;
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+}
+
+.img_video {
+    transition: 0.5s;
+}

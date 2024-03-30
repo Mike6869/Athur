@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body{
-  font-family:SpectralSC;
+  font-family:"SpectralSC";
   font-weight:400;
-  background-color:#131312;
+  background-color:#000000;
   color:#FFFFFF;
   min-height:100vh;
   display:flex;
@@ -17,10 +17,28 @@ a{
   text-decoration:none;
 }
 
+img{
+  border-radius: 20px;
+}
+
+video{
+  border-radius: 20px;
+}
+
 @font-face {
   font-display:swap;
-  font-family:SpectralSC;
+  font-family:"SpectralSC";
   font-style:normal;
   font-weight:400;
-  src:url('../../public/fonts/SpectralSC-Medium.ttf') format("ttf")
+  src:url('../../public/fonts/SpectralSC-Medium.ttf')
+}
+
+@font-face {
+  font-family:"ReemKufi";
+  src:url('../../public/fonts/ReemKufi-Regular.ttf')
+}
+
+@font-face {
+  font-family:"YesevaOne";
+  src:url('../../public/fonts/YesevaOne-Regular.ttf')
 }
