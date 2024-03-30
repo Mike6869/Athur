@@ -4,8 +4,14 @@ import {Dialog, Disclosure, Popover, Transition} from "@headlessui/react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import style from "./Header.module.css";
 import HeaderLogo from "./HeaderLogo/HeaderLogo";
+import { Link } from "react-router-dom";
 
-const MENU_PARAMETR = ["ПОРТФОЛИО", "ЦЕНЫ", "ОБО МНЕ", "КОНТАКТЫ"];
+const MENU_PARAMETR = [
+    {text: "ПОРТФОЛИО", href: "/portfolio"},
+    {text: "ЦЕНЫ", href: "/price"},
+    {text: "ОБО МНЕ", href: "/abount_me"},
+    {text: "КОНТАКТЫ", href: "/contact"}
+];
 
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,7 +37,11 @@ function Header() {
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     {MENU_PARAMETR.map((elem) => {
-                        return <HeaderSpan key={elem}>{elem}</HeaderSpan>;
+                        return (
+                            <HeaderSpan href={elem.href} key={elem.text}>
+                                {elem.text}
+                            </HeaderSpan>
+                        );
                     })}
                 </Popover.Group>
             </nav>
@@ -44,14 +54,14 @@ function Header() {
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        {/* <Link to="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                                 alt=""
                             />
-                        </a>
+                        </Link> */}
                         <button
                             type="button"
                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -66,13 +76,13 @@ function Header() {
                             <div className="space-y-2 py-6">
                                 {MENU_PARAMETR.map((elem) => {
                                     return (
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to={elem.href}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                            key={elem}
+                                            key={elem.text}
                                         >
-                                            {elem}
-                                        </a>
+                                            {elem.text}
+                                        </Link>
                                     );
                                 })}
                             </div>

@@ -22,7 +22,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className="flex flex-row flex-wrap flex-shrink-0">
+        <div className={"flex flex-row flex-wrap flex-shrink-0 " + style.portfolio}>
             {portfolioSrc.map((elem) => {
                 return (
                     <ElementHover
@@ -30,6 +30,7 @@ const Portfolio = () => {
                         headText={elem.headText}
                         bodyText={elem.bodyText}
                         key={elem.src}
+                        className={style.img}
                     />
                 );
             })}

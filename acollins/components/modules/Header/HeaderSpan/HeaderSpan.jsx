@@ -1,15 +1,17 @@
 import style from "./HeaderSpan.module.css"
+import { Link } from "react-router-dom";
 
-const HeaderSpan = ({children}) => {
+
+const HeaderSpan = ({children, href}) => {
     return (
-        <a
-            href="#"
+        <Link
+            to={href}
             className={
                 "text-2xl font-normal leading-6 text-white-900 " + style.nav
             }
         >
             {children}
-        </a>
+        </Link>
     );
 };
 
