@@ -24,9 +24,9 @@ const Slider = () => {
 
     return (
         <div>
-            <TextSlider text="ARTHUR"></TextSlider>
+            {/* <TextSlider text="ARTHUR"></TextSlider>
             <TextSlider text="COLLINS"></TextSlider>
-            <TextSlider text="PHOTO"></TextSlider>
+            <TextSlider text="PHOTO"></TextSlider> */}
 
             <Marquee speed={100} play={true} style={{filter: "brightness(65%)"}}>
                 {sliderSrc?.map((src) => {
