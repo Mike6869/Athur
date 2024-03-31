@@ -1,0 +1,10 @@
+.category {
+    gap: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    height: 800px;
+    object-fit: none;
+}

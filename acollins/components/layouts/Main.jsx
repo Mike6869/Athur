@@ -25,14 +25,14 @@ export default function Main() {
                 <hr style={{margin: "20px"}} />
                 <Portfolio id="portfolio" />
 
-                <hr style={{margin: "20px"}} id="price" />
+                {/* <hr style={{margin: "20px"}} id="price" />
                 <Photo></Photo>
 
                 <hr style={{margin: "20px"}} />
                 <Video></Video>
 
                 <hr style={{margin: "20px"}} />
-                <Galery></Galery>
+                <Galery></Galery> */}
             </div>
         </>
     );

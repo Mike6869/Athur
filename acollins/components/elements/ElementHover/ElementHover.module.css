@@ -3,7 +3,8 @@
 }
 
 .hover_element:hover > .img_video{
-    filter: blur(10px) brightness(0.5)
+    filter: blur(10px) brightness(0.5);
+    transform: rotateY(180deg);
 }
 
 .hover_element:hover > .text{
@@ -28,5 +29,15 @@
     font-family: 'YesevaOne';
     font-weight: 400;
     font-size: 24px;
+    margin: 1rem;
+}
+
+.body_text{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-family: 'SpectralSC';
+    font-weight: 400;
+    font-size: 16px;
     margin: 1rem;
 }

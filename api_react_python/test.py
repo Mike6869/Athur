@@ -20,6 +20,11 @@ def get_url_for_portfolio() -> 'json':
     return jsonify(config.PORTFOLIO_INFO)
 
 
+@app.get('/category_src/<category>')
+def get_url_for_category(category) -> 'json':
+    return jsonify(config.CATEGORY_INFO[category])
+
+
 @app.get('/galery_preview_src')
 def get_url_for_galery_preview() -> 'json':
     photo_sessions = []
