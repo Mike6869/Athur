@@ -1,3 +1,12 @@
-/* .video{
-    width: 500px;
-} */
+.portfolio {
+    gap: 50px;
+    /* grid-row-gap: 24px;
+    grid-column-gap: 16px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    height: 800px;
+    object-fit: none;
+}

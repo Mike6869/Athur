@@ -7,8 +7,8 @@ import style from "./Slider.module.css";
 import Marquee from "react-fast-marquee"; //https://github.com/justin-chu/react-fast-marquee
 import TextSlider from "./TextSlider/TextSlider";
 
-const Slider = () => {
-    const [sliderSrc, setSliderSrc] = useState(["/slider/1.jpg"]);
+const Slider = ({id}) => {
+    const [sliderSrc, setSliderSrc] = useState([]);
     const getSliderSrc = async () => {
         try {
             const {data} = await axios.get(config.url_src_slider);
@@ -23,7 +23,7 @@ const Slider = () => {
     }, []);
 
     return (
-        <div>
+        <div style={{minHeight: "calc(100vh - 100px)"}} id={id}>
             {/* <TextSlider text="ARTHUR"></TextSlider>
             <TextSlider text="COLLINS"></TextSlider>
             <TextSlider text="PHOTO"></TextSlider> */}

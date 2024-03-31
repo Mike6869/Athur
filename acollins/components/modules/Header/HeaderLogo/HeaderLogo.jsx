@@ -1,8 +1,17 @@
+import {Link} from "react-router-dom";
+
 import style from "./HeaderLogo.module.css";
+import slideToBlock from "@/components/func/func";
 
 const HeaderLogo = () => {
     return (
-        <a href="#" className={"text-2xl font-bold -m-1.5 p-1.5 " + style.logo}>
+        <Link
+            onClick={() => {
+                slideToBlock('slider', true);
+            }}
+            to="/main/slider"
+            className={"text-2xl font-bold -m-1.5 p-1.5 " + style.logo}
+        >
             <span className="sr-only">Your Company</span>
             {/* <img
             className="h-8 w-auto"
@@ -10,7 +19,7 @@ const HeaderLogo = () => {
             alt=""
         /> */}
             ACOLLIINS
-        </a>
+        </Link>
     );
 };
 
