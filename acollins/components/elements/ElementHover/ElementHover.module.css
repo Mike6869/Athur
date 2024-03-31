@@ -1,5 +1,5 @@
 .hover_element{
-    position: relative
+    position: relative;
 }
 
 .hover_element:hover > .img_video{

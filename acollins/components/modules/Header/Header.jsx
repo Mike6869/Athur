@@ -7,10 +7,10 @@ import HeaderLogo from "./HeaderLogo/HeaderLogo";
 import { Link } from "react-router-dom";
 
 const MENU_PARAMETR = [
-    {text: "ПОРТФОЛИО", href: "/portfolio"},
-    {text: "ЦЕНЫ", href: "/price"},
-    {text: "ОБО МНЕ", href: "/abount_me"},
-    {text: "КОНТАКТЫ", href: "/contact"}
+    {text: "ПОРТФОЛИО", id: "portfolio"},
+    {text: "ЦЕНЫ", id: "price"},
+    {text: "ОБО МНЕ", id: "abount_me"},
+    {text: "КОНТАКТЫ", id: "contact"}
 ];
 
 function Header() {
@@ -38,7 +38,7 @@ function Header() {
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     {MENU_PARAMETR.map((elem) => {
                         return (
-                            <HeaderSpan href={elem.href} key={elem.text}>
+                            <HeaderSpan id={elem.id} key={elem.text}>
                                 {elem.text}
                             </HeaderSpan>
                         );
@@ -77,7 +77,7 @@ function Header() {
                                 {MENU_PARAMETR.map((elem) => {
                                     return (
                                         <Link
-                                            to={elem.href}
+                                            to={elem.id}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                             key={elem.text}
                                         >
