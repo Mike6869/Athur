@@ -42,3 +42,9 @@ video{
   font-family:"YesevaOne";
   src:url('../../public/fonts/YesevaOne-Regular.ttf')
 }
+
+body::-webkit-scrollbar {
+  /* background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%); */
+  /* box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5); */
+  /* border-radius: 100px; */
+}

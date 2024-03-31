@@ -11,6 +11,7 @@
     "url_src_video_promo_poster": "http://127.0.0.1:5000/get/page_video/promo_poster.jpg",
     "url_src_galery_preview": "http://127.0.0.1:5000/galery_preview_src",
     "url_src_portfolio": "http://127.0.0.1:5000/portfolio_src",
+    "url_src_category": "http://127.0.0.1:5000/category_src/",
     "img_type": ["jpeg", "jpg", "png"],
     "video_type": ["mp4"]
 }

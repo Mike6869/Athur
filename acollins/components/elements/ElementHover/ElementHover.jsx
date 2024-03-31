@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 import style from "./ElementHover.module.css";
 import config from "@/config.json";
 
-const ElementHover = ({src, headText, bodyText, className}) => {
+const ElementHover = ({src, headText, bodyText, className, link}) => {
     const RE = /(?:\.([^.]+))?$/;
 
     return (
@@ -22,7 +22,7 @@ const ElementHover = ({src, headText, bodyText, className}) => {
             <div className={style.text}>
                 <div className={style.head_text}>{headText}</div>
                 <div className={style.body_text}>{bodyText}</div>
-                <Button text={"Перейти"}/>
+                <Button text={"Перейти"} onClick={link}/>
             </div>
         </div>
     );
