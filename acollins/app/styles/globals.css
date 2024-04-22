@@ -2,49 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  font-family:"SpectralSC";
-  font-weight:400;
-  background-color:#000000;
-  color:#FFFFFF;
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
+body {
+    font-family: "SpectralSC";
+    font-weight: 400;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-img{
-  border-radius: 20px;
+img {
+    border-radius: 20px;
+    object-fit: none;
 }
 
-video{
-  border-radius: 20px;
-}
-
-@font-face {
-  font-display:swap;
-  font-family:"SpectralSC";
-  font-style:normal;
-  font-weight:400;
-  src:url('../../public/fonts/SpectralSC-Medium.ttf')
+video {
+    border-radius: 20px;
 }
 
 @font-face {
-  font-family:"ReemKufi";
-  src:url('../../public/fonts/ReemKufi-Regular.ttf')
+    font-display: swap;
+    font-family: "SpectralSC";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../public/fonts/SpectralSC-Medium.ttf");
 }
 
 @font-face {
-  font-family:"YesevaOne";
-  src:url('../../public/fonts/YesevaOne-Regular.ttf')
+    font-family: "ReemKufi";
+    src: url("../../public/fonts/ReemKufi-Regular.ttf");
+}
+
+@font-face {
+    font-family: "YesevaOne";
+    src: url("../../public/fonts/YesevaOne-Regular.ttf");
 }
 
 body::-webkit-scrollbar {
-  /* background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%); */
-  /* box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5); */
-  /* border-radius: 100px; */
+    /* background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%); */
+    /* box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5); */
+    /* border-radius: 100px; */
 }

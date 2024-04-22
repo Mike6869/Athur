@@ -1,0 +1,29 @@
+.title {
+    font-size: 45px;
+    margin-bottom: 41px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0 60px 0;
+}
+
+.section {
+    background: 0% 86% / 6px 8px repeat-x radial-gradient(#fff 1px, #000 0px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_div {
+    width: fit-content;
+    background: #000;
+}
+
+.price_text {
+    width: 44%;
+}
+
+.price_li {
+    margin-bottom: 41px;
+}

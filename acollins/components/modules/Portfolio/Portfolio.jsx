@@ -27,7 +27,7 @@ const Portfolio = ({id}) => {
     return (
         <div
             className={
-                "flex flex-row flex-wrap flex-shrink-0 " + style.portfolio
+                "flex flex-row pt-20 flex-wrap flex-shrink-0 " + style.portfolio
             }
             id={id}
         >

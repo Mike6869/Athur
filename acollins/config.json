@@ -4,7 +4,7 @@
     "url_src_slider": "http://127.0.0.1:5000/slider_src",
     "url_src_photo_reportage": "http://127.0.0.1:5000/get/page_photo/reportage.jpg",
     "url_src_photo_quest": "http://127.0.0.1:5000/get/page_photo/quest.jpg",
-    "url_src_photo_studio": "http://127.0.0.1:5000/get/page_photo/studio.jpg",
+    "url_src_photo_studio": "http://127.0.0.1:5000/get/page_photo/main.jpg",
     "url_src_video_dance": "http://127.0.0.1:5000/get/page_video/dance.mp4",
     "url_src_video_promo": "http://127.0.0.1:5000/get/page_video/promo.mp4",
     "url_src_video_dance_poster": "http://127.0.0.1:5000/get/page_video/dance_poster.jpg",

@@ -1,9 +1,5 @@
-.img_slider{
+.img_slider {
     height: calc(100vh - 100px);
-    /* border-radius: 20px; */
     margin: 0 10px 0 10px;
-    /* background-color: rgba(200,100,0,5);
-    background-blend-mode: multiply; */
-    /* width: auto; */
-    /* object-fit: cover; */
+    object-fit: cover;
 }

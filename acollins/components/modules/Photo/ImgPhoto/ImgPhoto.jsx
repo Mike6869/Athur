@@ -19,7 +19,7 @@ const ImgPhoto = () => {
             ></DivPhoto>
 
             <DivPhoto
-                label_name={"Студийоные"}
+                label_name={"Студийные"}
                 src={config.url_src_photo_studio}
                 id="photo_studio"
             ></DivPhoto>
